@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Aluno</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link rel="stylesheet" href="../styles/forms-style.css">
+</head>
+    <body>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">
+					<img src="../images/logo-menu.png" class="img-menu"></a>
+				<a href="#" data-activates="menu-mobile" class="button-collapse">
+             		<i class="material-icons">menu</i>
+         		</a>
+				<ul class="right hide-on-med-and-down">
+					 <li><a href="../pages/listagem-alunos.html">Listagem de alunos</a></li>
+					 <li><a href="../pages/login.html">Logout</a></li>
+				</ul>
+				<ul class="side-nav" id="menu-mobile">
+					 <li><a href="../pages/listagem-alunos.html">Listagem de alunos</a></li>
+					 <li><a href="../pages/login.html">Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+        <div class="container form">
+			<form class="col s12">
+				<div class="row">
+					<div class="col s12">
+						<label for="file-upload" class="file-upload">
+							Incluir Foto do aluno
+						</label>
+						<input id="file-upload" type="file"/>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="textfield col s6">
+					  <label for="aluno">Nome do aluno</label>
+					  <input type="text" id="aluno" placeholder="Insira o nome do aluno" class="validate">
+					</div>
+					<div class="textfield col s6">
+					  <label for="nascimento">Data de nascimento</label>
+					  <input type="text" id="nascimento" placeholder="Insira a data de nascimento" class="validate">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="textfield col s6">
+					  <label for="turma">Turma</label>
+					  <input type="text" id="turma" placeholder="Insira a turma" class="validate">
+					</div>
+					<div class="textfield col s6">
+					  <label for="telefone">Contato do responsável</label>
+					  <input type="text" id="telefone" placeholder="Insira o telefone do responsável" class="validate">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="textfield col s12">
+					  <label for="resumo">Resumo do aluno</label>
+					  <textarea id="resumo" class="materialize-textarea" data-length="900" placeholder="Coloque um resumo da história do aluno"></textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="textfield col s6">
+					  <label for="atipicidade">Atipicidade</label>
+					  <input type="text" id="atipicidade" placeholder="Insira a atipicidade do aluno" class="validate">
+					</div>
+					<div class="textfield col s6">
+					  <label for="assistencia">Assintência especial</label>
+					  <input type="text" id="assistencia" placeholder="Insira as assistências necessárias para o aluno" class="validate">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="textfield col s12">
+					  <label for="orientacao">Orientação para desorganizações</label>
+					  <input type="text" id="orientacao" placeholder="Escreva orientações para eventuais desorganizações" class="validate">
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="textfield col s6">
+					  <label for="interesses">Interesses do aluno</label>
+					  <input type="text" id="interesses" placeholder="Insira interesses do aluno" class="validate">
+					</div>
+					<div class="textfield col s6">
+					  <label for="gostos">Do que o aluno gosta</label>
+					  <input type="text" id="gostos" placeholder="Descreva o que o aluno gosta" class="validate">
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="col s12">
+						<a class="btn-salvar" href="../pages/listagem-alunos.html"><button class="default-btn">Salvar</button></a>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="rodape">
+			<h5>Destinado ao uso público</h5>
+		</div>
+
+		<script src="../scripts/jquery-3.7.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script>
+
+			$(function(){
+				$(".button-collapse").sideNav();
+
+				document.querySelector("#file-upload").onchange = function() {
+				  const fileName = this.files[0]?.name;
+				  const label = document.querySelector("label[for=file-upload]");
+				  label.innerText = fileName ?? "Incluir Foto do aluno";
+				};
+			});
+
+		</script>
+
+    </body>
+</html>

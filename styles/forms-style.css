@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+table {
+	margin: 5.8% 0;
+}
+
+.file-upload, .default-btn {
+    border: 0;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+	margin-bottom: 3%;
+	border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;    
+	background: #fad391ff;
+	color: #2b134b;
+}
+
+.default-btn {
+	position: relative;
+	z-index: -1;
+}
+
+.btn-salvar {
+	padding: 7px 0;
+}
+
+.file-upload:hover, .default-btn:hover {   
+	background: #f9c060;
+}
+
+.file-upload:focus, .default-btn:focus {   
+	background: #f9c060;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.img-menu {
+	width: 45%;
+	margin: 5% 0 5% 5%;
+}
+
+.nav-wrapper {
+	background-color: #9ecee8ff;
+}
+
+.imagem-aluno {
+	margin: 3% 0 0 2%;
+	box-shadow: 5px 5px 40px #9ecee8ff;
+}
+
+.form {	
+	margin-top: 4%;
+}
+
+.rodape {
+	background: #fad391ff;
+	padding: 1% 0;
+	margin-top: 2%;
+}
+
+.rodape h5 {
+	color: #fff;
+	font-size: 16px;
+	margin-left: 5%;
+}
+
+@media only screen and (max-width: 992px){
+	nav .brand-logo {
+		float: right;
+		position: relative;
+		left: 0;
+	}
+
+	nav .brand-logo .img-menu {
+		float: right;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	nav .brand-logo .img-menu {
+		margin: 2% 0 5% 5%;
+	}
+}

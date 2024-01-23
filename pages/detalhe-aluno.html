@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detalhes do Aluno</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../styles/forms-style.css">
+</head>
+    <body>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">
+					<img src="../images/logo-menu.png" class="img-menu"></a>
+				<a href="#" data-activates="menu-mobile" class="button-collapse">
+             		<i class="material-icons">menu</i>
+         		</a>
+				<ul class="right hide-on-med-and-down">
+					 <li><a href="../pages/cadastro-aluno.html">Cadastrar aluno</a></li>
+					 <li><a href="../pages/listagem-alunos.html">Listagem de alunos</a></li>
+					 <li><a href="../pages/login.html">Logout</a></li>
+				</ul>
+				<ul class="side-nav" id="menu-mobile">
+					 <li><a href="../pages/cadastro-aluno.html">Cadastrar aluno</a></li>
+					 <li><a href="../pages/listagem-alunos.html">Listagem de alunos</a></li>
+					 <li><a href="../pages/login.html">Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+        <div class="container">
+			<div class="row">
+				<div class="col s12">
+					<img src="../images/aluno.png" class="imagem-aluno" alt="Foto do aluno">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s6">
+					<h5>Nome:</h5><label>Olaf</label>
+				</div>	
+				<div class="col s6">
+					<h5>Idade:</h5><label>12 anos</label>
+				</div>			
+			</div>
+
+			<div class="row">
+				<div class="col s6">
+					<h5>Turma:</h5><label>202</label>
+				</div>	
+				<div class="col s6">
+					<h5>Contato do responsável:</h5><label>-51999999999</label>
+				</div>			
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<h5>Resumo do aluno:</h5><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</label>
+				</div>			
+			</div>
+
+			<div class="row">
+				<div class="col s6">
+					<h5>Atipicidade:</h5><label>Asperger com TDAH</label>
+				</div>	
+				<div class="col s6">
+					<h5>Precido de assistência para:</h5><label>Me acalmar quando me empolgo com algo</label>
+				</div>			
+			</div>
+
+			<div class="row">
+				<div class="col s12">
+					<h5>Em caso de desorganização:</h5><label>Liguar para Elsa caso não retorne a me organizar</label>
+				</div>			
+			</div>
+
+			<div class="row">	
+				<div class="col s6">
+					<h5>Gosto de:</h5><label>Abraços quentinhos</label>
+				</div>	
+				<div class="col s6">
+					<h5>Me acalmo com:</h5><label>Distração, coisas do verão</label>
+				</div>			
+			</div>
+
+		</div>
+
+		<div class="rodape">
+			<h5>Destinado ao uso público</h5>
+		</div>
+	
+		<script src="../scripts/jquery-3.7.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script>
+
+			$(function(){
+				$(".button-collapse").sideNav();
+			});
+		</script>
+
+    </body>
+</html>

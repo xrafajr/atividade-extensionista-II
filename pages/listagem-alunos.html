@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listagem de Alunos</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../styles/forms-style.css">
+</head>
+    <body>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">
+					<img src="../images/logo-menu.png" class="img-menu"></a>
+				<a href="#" data-activates="menu-mobile" class="button-collapse">
+             		<i class="material-icons">menu</i>
+         		</a>
+				<ul class="right hide-on-med-and-down">
+					 <li><a href="../pages/cadastro-aluno.html">Cadastrar aluno</a></li>
+					 <li><a href="../pages/login.html">Logout</a></li>
+				</ul>
+				<ul class="side-nav" id="menu-mobile">
+					 <li><a href="../pages/cadastro-aluno.html">Cadastrar aluno</a></li>
+					 <li><a href="../pages/login.html">Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+        <div class="container">
+			<div class="row">
+				<div class="col s12">
+					<table class="bordered centered highlight">
+						<thead>
+							<tr>
+								<th>Matricula</th>
+								<th>Nome</th>
+								<th>Turma</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="detalhe-aluno.html">001</a></td>
+								<td>Rafael</td>
+								<td>301</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">002</a></td>
+								<td>Olaf</td>
+								<td>202</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">003</a></td>
+								<td>Elsa</td>
+								<td>302</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">005</a></td>
+								<td>Anna</td>
+								<td>403</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">006</a></td>
+								<td>Kristoff</td>
+								<td>502</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">007</a></td>
+								<td>Hans</td>
+								<td>401</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">008</a></td>
+								<td>Sven</td>
+								<td>403</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">009</a></td>
+								<td>Figs</td>
+								<td>103</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">010</a></td>
+								<td>Floco</td>
+								<td>102</td>
+							</tr>
+							<tr>
+								<td><a href="detalhe-aluno.html">011</a></td>
+								<td>Branco</td>
+								<td>101</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="rodape">
+			<h5>Destinado ao uso público</h5>
+		</div>
+
+		<script src="../scripts/jquery-3.7.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script>
+
+			$(function(){
+				$(".button-collapse").sideNav();
+			});
+		</script>
+
+    </body>
+</html>
